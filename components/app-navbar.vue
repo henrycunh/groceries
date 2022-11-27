@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 const links = ref([
-    { href: '/', text: 'About' },
+    { href: '/', text: 'what' },
 ])
 </script>
 
@@ -8,10 +8,10 @@ const links = ref([
     <div flex text-xl items-center op70 p-4 max-w-800px mx-auto>
         <nuxt-link
             to="/" text-2xl text-navy font-bold
-            border-b-2 border-transparent 
+            border-b-2 border-transparent
             transition-all
         >
-            nuxtase
+            🥑 abacatario
         </nuxt-link>
         <div ml-auto flex items-center>
             <nuxt-link

@@ -5,10 +5,10 @@ const onClick = () => emit('click')
 
 <template>
     <button
-        text="3.5 white"
+        text-14px text-white
         font-bold
-        bg="#FE4C4C hover:#F42A2A"
-        rounded p="x-6 y-2.5" rounded-2 shadow="lg red-200 dark:red-900 active:none"
+        bg-emerald-600
+        rounded px-3 py-6px rounded-2
         transition
         flex
         items-center
