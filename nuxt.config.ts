@@ -1,20 +1,12 @@
-import { defineNuxtConfig } from 'nuxt'
+process.env.DETA_PROJECT_KEY = 'ypEG79dk_p4j9vAz3zBxEcAoay17pouXdTAFL92o4'
 
 export default defineNuxtConfig({
     modules: [
         'nuxt-ev',
         '@vueuse/nuxt',
         '@unocss/nuxt',
-        '@pinia/nuxt',
-        '@nuxtjs/color-mode',
         '@kevinmarrec/nuxt-pwa',
     ],
-    experimental: {
-        reactivityTransform: true,
-    },
-    vueuse: {
-        ssrHandlers: true,
-    },
     unocss: {
         uno: true,
         attributify: true,
@@ -25,11 +17,26 @@ export default defineNuxtConfig({
         webFonts: {
             provider: 'google',
             fonts: {
-                sans: 'Inter:400,700',
+                sans: 'DM Sans:400,700',
             },
         },
     },
-    colorMode: {
-        classSuffix: '',
+    sourcemap: false,
+    pwa: {
+        manifest: {
+            name: 'Roba',
+            short_name: 'Roba',
+            description: 'A groceries list app',
+            theme_color: '#ffffff',
+            background_color: '#ffffff',
+            display: 'standalone',
+            orientation: 'portrait',
+        },
+        icon: {
+            fileName: 'icon.png',
+        },
+    },
+    experimental: {
+        reactivityTransform: true,
     },
 })

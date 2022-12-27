@@ -1,8 +1,8 @@
-import { groceriesDB } from '../db'
+import { db } from '../db'
 import type { GroceryType } from '~~/types/grocery'
 
 export default defineEventHandler(async (event) => {
-    const grocery: GroceryType = await useBody(event)
-    const createdGrocery = await groceriesDB.put(grocery)
-    return createdGrocery
+    const grocery: GroceryType = await readBody(event)
+    const createdGrocery = await db.put(grocery)
+    return createdGrocery as any as GroceryType
 })

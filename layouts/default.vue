@@ -3,9 +3,19 @@
 </script>
 
 <template>
-    <main font-sans class="py-20 px-10 text-center" max-w-768px mx-auto>
-        <app-navbar />
-        <slot />
-        <app-footer />
-    </main>
+    <div px-6>
+        <main
+            font-sans
+            max-w-768px mx-auto
+            my-12
+        >
+            <slot />
+        </main>
+    </div>
 </template>
+
+<style>
+body {
+    @apply bg-primary-50/20;
+}
+</style>

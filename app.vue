@@ -1,9 +1,9 @@
 <script setup>
 useHead({
-    title: 'Nuxtase',
+    title: 'Roba',
     link: [
         {
-            rel: 'icon', type: 'image/png', href: '/nuxt.png',
+            rel: 'icon', type: 'image/svg', href: 'https://api.iconify.design/fluent-emoji:croissant.svg?color=%230fbd3b',
         },
     ],
 })
